@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#2BA8F7"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta name="description" content="Juan Balbuena. Aprendiz de desarrollo Web, estoy libre para hacer proyectos"/>
+    <title>Juan Balbuena</title>
+    <link rel="shortcut icon" href="img/favicon/icono.ico"/>
+    <link href='//fonts.googleapis.com/css?family=Roboto:300,700,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/estilos.css"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/min/handlebars-v2.0.0.min.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/jquery.fancy-scroll.min.js"></script>
+    <script src="js/min/animatescroll.min.js"></script>
+    <script src="js/min/codigo.min.js"></script>
+    <script id="mi-plantilla" type="text/x-handlebars-template">
+        <header class="header">
+            <img class="avatar" src="{{avatar}}" alt="{{ altAvatar }}"/>
+            <div class="textos-header">
+                <h1 class="header-yo">{{nombre}}</h1>
+                <h2>{{descripcion}}</h2>
+            </div>
+        </header>
+        <nav id="menu-contenedor" class="nav">
+            <ul id="menu" class="lista">
+                <a class="ancla-lista" href="#"><li id="contact" class="lista">CONTACTO</li></a>
+                <a class="ancla-lista" href="#"><li id="skills" class="lista">HABILIDADES</li></a>
+                <a class="ancla-lista" href="#"><li id="proyecto" class="lista">PROYECTOS</li></a>
+                <a class="ancla-lista" href="#"><li id="education" class="lista">EDUCACIÓN</li></a>
+            </ul>
+        </nav>
+        <section id="habilidades" class="habilidades">
+            <article class="conocimientos">
+                <h2 class="header-habilidades">Habilidades</h2>
+                {{#if habilidades}}
+                <p class="text-habilidades">{{this.[habilidades].html5}}</p>
+
+                <p class="text-habilidades">{{this.[habilidades].css3}}</p>
+
+                <p class="text-habilidades">{{this.[habilidades].javascript}}</p>
+
+                <p class="text-habilidades">{{this.[habilidades].stylus}}</p>
+
+                <p class="text-habilidades">{{this.[habilidades].handlebars}}</p>
+
+                <p class="text-habilidades">{{this.[habilidades].jquery}}</p>
+                {{/if}}
+            </article>
+            <article class="trabajo">
+                <h2 class="header-habilidades">Profesión</h2>
+                <p class="font-light">{{profesion}}</p>
+                <h2 class="header-habilidades">Trabajo</h2>
+                <p class="font-light">{{trabajo}}</p>
+            </article>
+        </section>
+        <section id="proyectos" class="proyectos">
+            <h2 class="que-hice">Proyectos</h2>
+            <article class="article-webs">
+                <a target="_blank" href="http://www.stellamgb.com">
+                    <figure>
+                        <img class="web" src="{{this.[webs].mama}}" alt="{{altStella}}">
+                        <figcaption>{{this.[webs].figStella}}</figcaption>
+                    </figure>
+                </a>
+            </article>
+            <h2 class="que-hice">Proyectos en curso</h2>
+            <article class="article-webs">
+                <a target="_blank" href="http://sitioprueba2.hol.es">
+                    <figure>
+                        <img class="web" src="{{this.[webs].alborada}}" alt="altAlborada">
+                        <figcaption>{{this.[webs].figAlborada}}</figcaption>
+                    </figure>
+                </a>
+            </article>
+            <article class="article-webs">
+                <h3 class="header-article-webs">Mini juegos que desarrollé para aprender JavaScript</h3>
+                <a target="_blank" class="juegos" href="http://www.juanbalbuena.es/Ahorcado/index.html">Ahorcado</a>
+                <a target="_blank" class="juegos" href="http://www.juanbalbuena.es/Tifis/index.html">Zelda</a>
+                <a target="_blank" class="juegos" href="http://www.juanbalbuena.es/Piedra-Papel-Tijera/capturar.html">Piedra, papel, tijera</a>
+            </article>
+        </section>
+        <section id="formacion" class="cursos">
+            <article class="conocimientos">
+                <h2 class="header-habilidades">Idiomas</h2>
+                <p><strong>{{this.[idiomas].español}}</strong> <span class="idiomas font-light">{{this.[idiomas].nivelEspañol}}</span></p>
+
+                <p><strong>{{this.[idiomas].gallego}}</strong> <span class="idiomas font-light">{{this.[idiomas].nivelGallego}}</span></p>
+
+                <p><strong>{{this.[idiomas].ingles}}</strong> <span class="idiomas font-light">{{this.[idiomas].nivelIngles}}</span></p>
+            </article>
+            <article class="trabajo">
+                <h2 class="header-habilidades">Cursos</h2>
+
+                <p><strong>{{this.[cursos].mejorandola}}</strong></p>
+
+                <p class="font-light">{{this.[cursos].[aprobados].backend}}</p>
+
+                <p><strong>{{this.[cursos].mejorandola}}</strong></p>
+
+                <p class="font-light">{{this.[cursos].[aprobados].diseno}}</p>
+
+                <p><strong>{{this.[cursos].escuelait}}</strong></p>
+
+                <p class="font-light">{{this.[cursos].[aprobados].django}}</p>
+            </article>
+        </section>
+        <section id="contacto">
+            <h2 class="redes">CONTACTO</h2>
+            <article class="redes">
+                <a target="_blank" href="https://twitter.com/JuanBalbuena4">
+                    <img src="img/redes/twitter.png" alt="Twitter"/>
+                </a>
+                <a target="_blank" href="https://plus.google.com/+JuanBalbuenaGonzález/posts?rel=author">
+                    <img src="img/redes/google-plus.png" alt="google-plus"/>
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/juanbalbuena1">
+                    <img src="img/redes/linkedin.png" alt="Linkedin"/>
+                </a>
+            </article>
+        </section>
+        <form id="form" method="post" action="info@juanbalbuena.es">
+            <input type="hidden" name="recipient" value="info@juanbalbuena.es" />
+            <input type="hidden" name="redirect"  value="http://www.juanbalbuena.es" />
+            <input type="hidden" name="missing_fields_redirect" value="http://www.juanbalbuena.es" />
+            <input type="text" class="input" id="nombre" name="Nombre" placeholder="Escribe tu nombre" required>
+            <br>
+            <input name="email" id="email" class="input" type="email" placeholder="Escribe tu Email" required/>
+            <br>
+            <label class="contador">Presupuesto:</label>
+            <input class="contador range" type="range" name="presupuesto" required id="range" min="500" max="2500">
+            <div id="contador"></div>
+            <textarea id="mensaje" class="mensaje" name="Mensaje" cols="30" rows="10"  required placeholder="Escribe aquí el contenido de tu mensaje"></textarea>
+            <br>
+            <input id="submit" class="submit" type="submit" value="Enviar">
+        </form>
+        <footer>
+            <h2 class="header-footer">&#169; {{nombreFooter}}</h2>
+        </footer>
+    </script>
+</head>
+<body>
+    <section id="contenedor">
+
+    </section>
+</body>
+</html>
