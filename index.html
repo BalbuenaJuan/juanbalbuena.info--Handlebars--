@@ -35,17 +35,9 @@
             <article class="conocimientos">
                 <h2 class="header-habilidades">Habilidades</h2>
                 {{#if habilidades}}
-                <p class="text-habilidades">{{this.[habilidades].html5}}</p>
-
-                <p class="text-habilidades">{{this.[habilidades].css3}}</p>
-
-                <p class="text-habilidades">{{this.[habilidades].javascript}}</p>
-
-                <p class="text-habilidades">{{this.[habilidades].stylus}}</p>
-
-                <p class="text-habilidades">{{this.[habilidades].handlebars}}</p>
-
-                <p class="text-habilidades">{{this.[habilidades].jquery}}</p>
+                {{#each habilidades}}
+                <p class="text-habilidades">{{habilidad}}</p>
+                {{/each }}
                 {{/if}}
             </article>
             <article class="trabajo">

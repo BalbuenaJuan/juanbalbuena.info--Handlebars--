@@ -7,14 +7,14 @@ $(document).ready(function(){
         descripcion: "Aprendiz de desarrollo Web, me encanta JavaScript y Django. Siempre mejorando mis habilidades, estoy libre para hacer proyectos",
         avatar: "//juanbalbuena.es/img/avatar/juan.jpg",
         altAvatar: "mi avatar",
-        habilidades: {
-            html5: "HTML5",
-            css3: "CSS3",
-            javascript: "JavaScript",
-            handlebars: "Handlebars",
-            jquery: "jQuery",
-            stylus: "Stylus"
-        },
+        habilidades: [
+            {habilidad: "HTML5"},
+            {habilidad: "CSS3"},
+            {habilidad: "JavaScript"},
+            {habilidad: "Handlebars"},
+            {habilidad: "jQuery"},
+            {habilidad: "Stylus"}
+        ],
         profesion: "Desarrollador desde el 2013",
         trabajo: "juanbalbuena.es",
         webs:  {
