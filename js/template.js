@@ -25,23 +25,16 @@ $(document).ready(function(){
             altStella: "Web Stella Maris",
             altAlborada: "Web organización Alborada"
         },
-        idiomas: {
-            español: "Español:",
-            nivelEspañol: "Nativo",
-            gallego: "Gallego:",
-            nivelGallego: "Nativo",
-            ingles: "inglés:",
-            nivelIngles: "medio(alto lectura)"
-        },
-        cursos: {
-            mejorandola: "Mejorando.la",
-            escuelait: "Escuela.it",
-            aprobados:{
-                diseno: "Curso de diseño Web online(2014)",
-                backend: "Curso profesional de backend(2014)",
-                django: "Curso de Django(2013-2014"
-            },
-        },
+        idiomas: [
+            {lenguaje: "Español:", nivel: "Nativo"},
+            {lenguaje: "Gallego:", nivel: "Nativo"},
+            {lenguaje: "inglés:", nivel: "Medio(alto lectura)"}
+        ],
+        cursos: [
+            {escuela: "Mejorando.la", area: "Curso de diseño Web online(2014)"},
+            {escuela: "Mejorando.la", area: "Curso profesional de backend(2014)"},
+            {escuela: "Escuela.it", area: "Curso de Django(2013-2014"}
+        ],
         nombreFooter: "Juan Balbuena 2014"
 
 
