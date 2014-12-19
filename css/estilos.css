@@ -126,6 +126,9 @@ ul {
   outline: 0;
   width: 90%;
 }
+.email {
+  display: none;
+}
 .juegos {
   background: #ffcb1f;
   border-bottom: 3px solid #2f4f4f;
@@ -168,6 +171,9 @@ ul {
   padding: 0;
   text-align: center;
 }
+.parrafo-none {
+  display: none;
+}
 .range {
   width: 75%;
 }
@@ -188,6 +194,7 @@ ul {
   border-radius: 6px;
   background: #e0e0e0;
   color: #fff;
+  cursor: pointer;
   display: inline-block;
   margin: 0.2em 0.1em;
   padding: 0.4em;
@@ -261,7 +268,8 @@ ul {
     width: 88%;
   }
   .lista {
-    margin: 0 auto;
+    font-size: 0.9em;
+    margin: 0;
     padding: 0;
   }
   .trabajo {

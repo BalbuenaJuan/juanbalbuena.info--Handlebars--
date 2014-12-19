@@ -7,14 +7,14 @@ $(document).ready(function(){
         descripcion: "Aprendiz de desarrollo Web, me encanta JavaScript y Django. Siempre mejorando mis habilidades, estoy libre para hacer proyectos",
         avatar: "//juanbalbuena.es/img/avatar/juan.jpg",
         altAvatar: "mi avatar",
-        habilidades: {
-            html5: "HTML5",
-            css3: "CSS3",
-            javascript: "JavaScript",
-            handlebars: "Handlebars",
-            jquery: "jQuery",
-            stylus: "Stylus"
-        },
+        habilidades: [
+            {habilidad: "HTML5"},
+            {habilidad: "CSS3"},
+            {habilidad: "JavaScript"},
+            {habilidad: "Handlebars"},
+            {habilidad: "jQuery"},
+            {habilidad: "Stylus"}
+        ],
         profesion: "Desarrollador desde el 2013",
         trabajo: "juanbalbuena.es",
         webs:  {
@@ -25,23 +25,16 @@ $(document).ready(function(){
             altStella: "Web Stella Maris",
             altAlborada: "Web organización Alborada"
         },
-        idiomas: {
-            español: "Español:",
-            nivelEspañol: "Nativo",
-            gallego: "Gallego:",
-            nivelGallego: "Nativo",
-            ingles: "inglés:",
-            nivelIngles: "medio(alto lectura)"
-        },
-        cursos: {
-            mejorandola: "Mejorando.la",
-            escuelait: "Escuela.it",
-            aprobados:{
-                diseno: "Curso de diseño Web online(2014)",
-                backend: "Curso profesional de backend(2014)",
-                django: "Curso de Django(2013-2014"
-            },
-        },
+        idiomas: [
+            {lenguaje: "Español:", nivel: "Nativo"},
+            {lenguaje: "Gallego:", nivel: "Nativo"},
+            {lenguaje: "inglés:", nivel: "Medio(alto lectura)"}
+        ],
+        cursos: [
+            {escuela: "Mejorando.la", area: "Curso de diseño Web online(2014)"},
+            {escuela: "Mejorando.la", area: "Curso profesional de backend(2014)"},
+            {escuela: "Escuela.it", area: "Curso de Django(2013-2014"}
+        ],
         nombreFooter: "Juan Balbuena 2014"
 
 
