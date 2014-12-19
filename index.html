@@ -36,8 +36,8 @@
                 <h2 class="header-habilidades">Habilidades</h2>
                 {{#if habilidades}}
                 {{#each habilidades}}
-                <p class="text-habilidades">{{habilidad}}</p>
-                {{/each }}
+                <p class="text-habilidades">{{habilidades}}</p>
+                {{/each}}
                 {{/if}}
             </article>
             <article class="trabajo">
@@ -76,20 +76,26 @@
         <section id="formacion" class="cursos">
             <article class="conocimientos">
                 <h2 class="header-habilidades">Idiomas</h2>
-                {{#if idiomas}}
-                {{#each idiomas}}
-                <p><strong>{{lenguaje}}</strong> <span class="idiomas font-light">{{nivel}}</span></p>
-                {{/each }}
-                {{/if}}
+                <p><strong>{{this.[idiomas].español}}</strong> <span class="idiomas font-light">{{this.[idiomas].nivelEspañol}}</span></p>
+
+                <p><strong>{{this.[idiomas].gallego}}</strong> <span class="idiomas font-light">{{this.[idiomas].nivelGallego}}</span></p>
+
+                <p><strong>{{this.[idiomas].ingles}}</strong> <span class="idiomas font-light">{{this.[idiomas].nivelIngles}}</span></p>
             </article>
             <article class="trabajo">
                 <h2 class="header-habilidades">Cursos</h2>
-                {{#if cursos }}
-                {{#each cursos }}
-                <p><strong>{{escuela}}</strong></p>
-                <p class="font-light">{{area}}</p>
-                {{/each}}
-                {{/if}}
+
+                <p><strong>{{this.[cursos].mejorandola}}</strong></p>
+
+                <p class="font-light">{{this.[cursos].[aprobados].backend}}</p>
+
+                <p><strong>{{this.[cursos].mejorandola}}</strong></p>
+
+                <p class="font-light">{{this.[cursos].[aprobados].diseno}}</p>
+
+                <p><strong>{{this.[cursos].escuelait}}</strong></p>
+
+                <p class="font-light">{{this.[cursos].[aprobados].django}}</p>
             </article>
         </section>
         <section id="contacto">

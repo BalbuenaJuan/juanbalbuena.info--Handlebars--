@@ -72,27 +72,5 @@ $(document).ready(function(){
 	$("#range").on("change", function(){
 		$("#contador").html(this.value + "€");
 	});//FIN VALIDACIÓN VISUAL EMAIL
-
-	$("#html").click( function(){
-		$("#animacion").toggle("slow");
-	});
-	$("#css").click( function(){
-		$("#animacion2").toggle("slow");
-	});
-	$("#javascript").click(function(){
-		$("#animacion3").toggle("slow");
-	});
-	$("#stylus").click( function(){
-		$("#animacion4").toggle("slow");
-	});
-	$("#handlebars").click(function () {
-		$("#animacion5").toggle("slow");
-	});
-	$("#jquery").click( function(){
-		$("#animacion6").toggle("slow");
-	});
-	$("#nombre").click( function(){
-		$("#email").fadeIn(1500);
-	});//FIN DE TOGGLE HABILIDADES
 });//FIN DE READY
 
